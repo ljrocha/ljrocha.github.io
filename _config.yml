@@ -28,6 +28,9 @@ twitter_username: ljrochaCS
 github_username:  ljrocha
 linkedin_username: ljrocha
 
+# Google Analytics
+google_analytics: UA-163383853-1
+
 show_excerpts: true
 
 defaults:
