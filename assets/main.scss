@@ -3,3 +3,82 @@
 ---
 
 @import "minima";
+
+.profile-pic {
+  display: block;
+  border-radius: 50%;
+  max-width: 30%;
+  height: auto;
+  margin: 0px auto;
+}
+
+.app-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  img {
+    width: 60px;
+    height: 60px;
+    align-self: flex-start;
+    margin-right: 10px;
+    object-fit: scale-down;
+  }
+}
+
+.social-icons-list {
+  list-style-type: none;
+  margin: 0px 0px 10px;
+
+  li + li {
+    margin-top: 5px;
+  }
+}
+
+.github-icon {
+  max-width: 33.3%;
+  height: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.projects-section {
+  margin-top: 100px;
+}
+
+.section-title {
+  @include relative-font-size(2);
+}
+
+.project-title {
+  @include relative-font-size(1.5);
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .social-icons-list {
+    display: flex;
+    align-items: center;
+
+    li + li {
+      margin-top: 0px;
+      margin-left: 5px;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    row-gap: 100px;
+  }
+}
