@@ -1,0 +1,83 @@
+.profile-pic {
+  display: block;
+  border-radius: 50%;
+  max-width: 30%;
+  height: auto;
+  margin: 0px auto;
+}
+
+.app-name {
+  margin-bottom: 15px;
+
+  img {
+    max-width: 60px;
+    height: auto;
+  }
+}
+
+.social-icons-list {
+  list-style-type: none;
+  margin: 0px 0px 15px;
+
+  li + li {
+    margin-top: 10px;
+  }
+}
+
+.github-icon {
+  max-width: 33.3%;
+  height: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.projects-section {
+  margin-top: 100px;
+}
+
+.project-title {
+  @include relative-font-size(1.5);
+}
+
+@media screen and (max-width: $on-medium) {
+  .row {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .app-name {
+    display: flex;
+    align-items: center;
+
+    img {
+      align-self: flex-start;
+      margin-right: 10px;
+    }
+  }
+
+  .social-icons-list {
+    display: flex;
+    align-items: center;
+
+    li + li {
+      margin-top: 0px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: $on-medium) {
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    row-gap: 100px;
+  }
+}
+
+.post-list h3 {
+  margin-top: 0px;
+}
