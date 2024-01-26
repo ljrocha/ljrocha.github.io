@@ -14,9 +14,9 @@ minima:
   date_format: "%b %-d, %Y"
 
   social_links:
-    twitter: ljrochaCS
-    github: ljrocha
-    linkedin: ljrocha
+    - { platform: x, user_url: "https://x.com/ljrochaCS" }
+    - { platform: github, user_url: "https://github.com/ljrocha" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/ljrocha" }
 
 defaults:
   - scope:
